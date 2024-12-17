@@ -53,6 +53,7 @@ ol {
 }
 
 .content {
+  padding: 133px 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -66,14 +67,16 @@ ol {
 .search-form {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .content__details {
   width: 100%;
-  /*height: 100%;*/
+
 }
 
 .content__list {
-  height: 240px;
+  padding-top: 26px;
+  height: 298px;
   overflow-y: scroll;
 }
