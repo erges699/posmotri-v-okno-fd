@@ -140,15 +140,20 @@ input:focus-visible {
 }
 
 .search-form__pseudo-checkbox {
+  position: relative;
   width: 19px;
   height: 19px;
+  margin-right: 5px;
+  vertical-align: middle;
   border: solid 1px #fff;
 }
 
-.search-form__pseudo-checkbox::auto {
-  width: 17px;
-  height: 17px;
-  background-color: #fff;
+.search-form__pseudo-checkbox::after {
+  content: '';
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  background-color: transparent;
 }
 
 .search-form__label:hover {
@@ -156,8 +161,8 @@ input:focus-visible {
   text-decoration: underline;
 }
 
-.search-form__pseudo-checkbox:checked {
-  border: dotted 2px #fff;
+.search-form__pseudo-checkbox:checked::after {
+  background-color: #fff;
 }
 
 .content__details {
@@ -167,7 +172,7 @@ input:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  justify-content: end;
+  justify-content: start;
   font-family: Oswald;
   font-weight: 700;
 }
@@ -182,7 +187,7 @@ input:focus-visible {
 
 .content__video-card {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: 196px 194px;
   align-items: start;
 }
 
