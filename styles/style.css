@@ -92,11 +92,72 @@ ol {
   justify-content: space-between;
 }
 
+.search-form__fieldset {
+  border: none;
+}
+
 .search-form__fieldset-title {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #fff;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  width:fit-content;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+input {
+  font-family: inherit;
+  color: inherit;
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  background-color: transparent;
+  appearance: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+/*
+input:focus-visible {
+  outline: 1px solid -webkit-focus-ring-color;
+}
+*/
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: solid 1px #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form__pseudo-checkbox::auto {
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+}
+
+.search-form__pseudo-checkbox:checked {
+
+}
+
+.search-form__pseudo-checkbox:focus-visible {
+
 }
 
 .content__details {
