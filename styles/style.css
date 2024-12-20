@@ -175,7 +175,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald; 
+  font-family: Oswald;
   font-size: 75px;
   line-height: 0.94;
   text-transform: uppercase;
@@ -255,14 +255,7 @@ input:focus {
   outline-offset: 1px;
 }
 
-.search-form__checkbox-list {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-
 .search-form__pseudo-checkbox {
-  position: relative;
   width: 19px;
   height: 19px;
   margin-right: 5px;
@@ -275,8 +268,7 @@ input:focus {
   content: '';
   width: 17px;
   height: 17px;
-  position: absolute;
-  vertical-align: middle;
+  display: block;
   border: solid 1px #000;
   background-color: rgb(255 255 255 / 0);
 }
