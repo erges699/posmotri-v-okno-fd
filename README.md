@@ -6,7 +6,4 @@
 
 «Посмотри в окно».
 
-<a href="https://github.com/erges699/posmotri-v-okno-fd" target="_blank">Посмотри в окно</a>
-
-<h3 align="left">Об авторе:</h3>
-<a href="https://github.com/erges699" target="_blank">Сергей Баляба</a>
+https://github.com/erges699/posmotri-v-okno-fd
